@@ -1,0 +1,38 @@
+package com.zensar.apigateway.filter;
+
+
+
+import org.springframework.cloud.gateway.filter.GatewayFilterChain;
+import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.web.server.ServerWebExchange;
+
+
+
+import reactor.core.publisher.Mono;
+
+
+
+/**
+* GlobalFilter is an interface given by ApiGateway
+* @author DC65846
+*
+*/
+
+
+
+public class CustomeFilter implements GlobalFilter{
+
+
+
+/**
+* Following method is an opportunity for us to do pre-processing
+* This method automatically executes
+*/
+@Override
+public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+System.out.println("In filter->Doing preprocessing");
+// after successful pre-processing this method must call filter() on chain obj
+return chain.filter(exchange);
+}
+
+}

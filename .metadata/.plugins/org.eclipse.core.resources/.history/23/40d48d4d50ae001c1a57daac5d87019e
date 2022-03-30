@@ -1,0 +1,5 @@
+server.port=8031
+spring.application.name=messageservice
+
+#this peoperty tells eureka client application to search eureka on given URL
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka

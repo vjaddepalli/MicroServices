@@ -1,0 +1,5 @@
+package com.zensar.displayservice.rest.controller;
+
+public class DisplayRestController {
+
+}

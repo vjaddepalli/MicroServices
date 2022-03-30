@@ -1,0 +1,9 @@
+package com.zensar.messageservice.rest.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/message")
+public class MessageRestController {
+
+}

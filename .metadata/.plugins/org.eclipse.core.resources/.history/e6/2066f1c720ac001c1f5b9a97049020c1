@@ -1,0 +1,13 @@
+package com.zensar.displayservice.feign.client;
+
+public interface MessageServiceFeignClient {
+	
+	/**
+	 * 
+	 * following method signature Must match with signature
+	 * In our case this method signature MUST with MessageRestController - generateMessage()
+	 * 
+	 */
+	public String callGetMessage();
+
+}

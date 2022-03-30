@@ -1,0 +1,3 @@
+server.port=8032
+
+url=http://localhost:8031/api/message

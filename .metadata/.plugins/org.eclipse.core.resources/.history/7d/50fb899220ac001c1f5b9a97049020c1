@@ -1,0 +1,11 @@
+package com.zensar.displayservice.feign.client;
+
+public interface MessageServiceFeignClient {
+	
+	/**
+	 * 
+	 * following methos signature Must match with signature
+	 */
+	public String callGetMessage();
+
+}

@@ -1,0 +1,5 @@
+package com.zensar.apigateway.filter;
+
+public class CustomFilter {
+
+}

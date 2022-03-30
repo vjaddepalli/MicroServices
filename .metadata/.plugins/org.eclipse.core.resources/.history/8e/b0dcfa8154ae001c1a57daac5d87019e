@@ -1,0 +1,10 @@
+server.port=8032
+
+url=http://localhost:8031/api/message
+
+spring.application.name=displayservice
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+#following peoperty decides how many calls to cnsider
+resilience4j.circuitbreaker.instances.messageservice.sliding-window-size=10
+resilience4j.circuitbreaker.instances.messageservice.failure-rate-threshold=50
